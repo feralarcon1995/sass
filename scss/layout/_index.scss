@@ -1,0 +1,31 @@
+h1 {
+    color: red;
+}
+
+body {
+    background-color: $bg-dark;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    background-color: #191919;
+    &__item {
+        padding: 10px * 20;
+        list-style: none;
+        .pepito {
+            color: #eee;
+            font-size: 24px;
+            text-decoration: none;
+            &:hover {
+                color: red;
+            }
+        }
+    }
+    ul {
+        display: flex;
+        li {
+            color: #eee;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: red;
+}
+
+body {
+  background-color: #77f4b3;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  background-color: #191919;
+}
+.nav__list__item {
+  padding: 200px;
+  list-style: none;
+}
+.nav__list__item .pepito {
+  color: #eee;
+  font-size: 24px;
+  text-decoration: none;
+}
+.nav__list__item .pepito:hover {
+  color: red;
+}
+.nav__list ul {
+  display: flex;
+}
+.nav__list ul li {
+  color: #eee;
+}
+
+/*# sourceMappingURL=style.css.map */
