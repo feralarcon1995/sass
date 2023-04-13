@@ -1,0 +1,115 @@
+// EJEMPLO DE IF
+
+.boton {
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #eee;
+
+    @if $tipo == primary {
+        background-color: rgb(64, 64, 187);
+    } @else if $tipo == secondary {
+        background-color: rgb(207, 81, 81);
+    } @else {
+        background-color: #eee;
+        color: #191919;
+    }
+}
+
+//EJEMPLO DE BUCLE FOR
+
+@for $pepito from 7 through 1 {
+    h#{$pepito} {
+        font-size: 15px * $pepito;
+    }
+}
+
+$botones: (
+    primary: blue,
+    secondary: gray,
+    light: white,
+    danger: red,
+    dark: black,
+    sm: 400px,
+    xl: 768px,
+);
+
+@each $btn, $color in $botones {
+    .btn-#{$btn} {
+        background-color: $color;
+        padding: 15px;
+        border-radius: 10px;
+        text-decoration: none;
+        color: #eee;
+
+        @if $btn == light {
+            color: #191919;
+        }
+    }
+}
+
+// MAP-GET($NOMBREDELISTA, VALORDENTRODELISTA) PARA LLAMAR A UN SOLO VALOR DE ESTA MISMA
+.card {
+    width: map-get($botones, sm);
+    height: map-get($botones, xl);
+    background-color: map-get($botones, dark);
+}
+
+//EXTEND
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.tamanio {
+    width: 50%;
+    height: 300px;
+}
+
+.card {
+    @extend .d-flex;
+    @extend .tamanio;
+    flex-direction: row;
+    background-color: map-get($botones, dark);
+    color: #eee;
+    padding: 20px;
+}
+
+//MIXIN SIN PARAMETROS
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+//MIXIN CON PARAMETROS
+@mixin d-flex($direction, $justify, $align, $wrap, $gap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+    gap: $gap;
+}
+
+@mixin tamanio($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+.card {
+    @include d-flex(row, center, center, nowrap, 5px);
+    margin: 10px;
+}
+
+.tarjeta {
+    @include d-flex(column, space-around, center, nowrap, 20px);
+    @include tamanio(500px, 30%);
+    @include flex-column;
+    background-color: #1919;
+    margin: 10px;
+}

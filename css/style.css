@@ -4,6 +4,151 @@
   box-sizing: border-box;
 }
 
+.boton {
+  padding: 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #eee;
+  background-color: #eee;
+  color: #191919;
+}
+
+h7 {
+  font-size: 105px;
+}
+
+h6 {
+  font-size: 90px;
+}
+
+h5 {
+  font-size: 75px;
+}
+
+h4 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 45px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h1 {
+  font-size: 15px;
+}
+
+.btn-primary {
+  background-color: blue;
+  padding: 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #eee;
+}
+
+.btn-secondary {
+  background-color: gray;
+  padding: 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #eee;
+}
+
+.btn-light {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #eee;
+  color: #191919;
+}
+
+.btn-danger {
+  background-color: red;
+  padding: 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #eee;
+}
+
+.btn-dark {
+  background-color: black;
+  padding: 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #eee;
+}
+
+.btn-sm {
+  background-color: 400px;
+  padding: 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #eee;
+}
+
+.btn-xl {
+  background-color: 768px;
+  padding: 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #eee;
+}
+
+.card {
+  width: 400px;
+  height: 768px;
+  background-color: black;
+}
+
+.d-flex, .card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.tamanio, .card {
+  width: 50%;
+  height: 300px;
+}
+
+.card {
+  flex-direction: row;
+  background-color: black;
+  color: #eee;
+  padding: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 5px;
+  margin: 10px;
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+  width: 500px;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(17, 153, 17, 0.6);
+  margin: 10px;
+}
+
 h1 {
   color: red;
 }
@@ -34,6 +179,15 @@ body {
 }
 .nav__list ul li {
   color: #eee;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  gap: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

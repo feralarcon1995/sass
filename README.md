@@ -18,7 +18,7 @@
 
 ## Comenzamos a compilar sass:
 ```bash
-  sasss --watch scss:css 
+  sass --watch scss:css 
 
   cada vez que trabajemos en nuestro proyecto.
 
